@@ -6,8 +6,8 @@
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 127.0.0.1 (MySQL 5.5.40-0ubuntu0.14.04.1)
-# Database: tripiye
-# Generation Time: 2015-10-08 09:33:40 +0000
+# Database: indonesia
+# Generation Time: 2015-10-08 11:13:28 +0000
 # ************************************************************
 
 
@@ -26,53 +26,50 @@
 DROP TABLE IF EXISTS `province`;
 
 CREATE TABLE `province` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(255) NOT NULL DEFAULT '',
-  `code` varchar(3) NOT NULL DEFAULT '',
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) CHARACTER SET latin1 NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=41 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8;
 
 LOCK TABLES `province` WRITE;
 /*!40000 ALTER TABLE `province` DISABLE KEYS */;
 
-INSERT INTO `province` (`id`, `name`, `code`)
+INSERT INTO `province` (`id`, `name`)
 VALUES
-	(1,'DKI Jakarta','JKR'),
-	(6,'Jawa Barat','JWB'),
-	(7,'Banten','BNT'),
-	(8,'Bali','BAL'),
-	(9,'Bangka Belitung','BGB'),
-	(10,'Bengkulu','BGK'),
-	(11,'Gorontalo','GOR'),
-	(12,'Papua Barat',''),
-	(13,'Jambi','JMB'),
-	(14,'Jawa Tengah','JWT'),
-	(15,'Jawa Timur','JAT'),
-	(16,'Kalimantan Barat','KLB'),
-	(17,'Kalimantan Selatan','KLS'),
-	(18,'Kalimantan Tengah','KTH'),
-	(19,'Kalimantan Timur','KLT'),
-	(20,'Kepulauan Riau','RIK'),
-	(21,'Lampung','LMP'),
-	(22,'Maluku','MLK'),
-	(23,'Maluku Utara','MLU'),
-	(24,'Nangroe Aceh Darussalam','ACE'),
-	(25,'Nusa Tenggara Barat','NTB'),
-	(26,'Nusa Tenggara Timur','NTT'),
-	(27,'Papua','PAP'),
-	(28,'Riau','RIA'),
-	(29,'Sulawesi Selatan','SLS'),
-	(30,'Sulawesi Tengah','SWT'),
-	(31,'Sulawesi Tenggara','SLT'),
-	(32,'Sulawesi Utara','SLU'),
-	(33,'Sumatera Barat','SMB'),
-	(34,'Sumatera Selatan','SSL'),
-	(35,'Sumatera Utara','SUT'),
-	(36,'Yogyakarta','YGY'),
-	(37,'Sulawesi Barat',''),
-	(38,'Kalimantan',''),
-	(39,'Sulawesi',''),
-	(40,'Sumatera','');
+	(1,'Aceh'),
+	(2,'Sumatera Utara'),
+	(3,'Sumatera Barat'),
+	(4,'Riau'),
+	(5,'Jambi'),
+	(6,'Sumatera Selatan'),
+	(7,'Bengkulu'),
+	(8,'Lampung'),
+	(9,'Kepulauan Bangka Belitung'),
+	(10,'Kepulauan Riau'),
+	(11,'Dki Jakarta'),
+	(12,'Jawa Barat'),
+	(13,'Jawa Tengah'),
+	(14,'Di Yogyakarta'),
+	(15,'Jawa Timur'),
+	(16,'Banten'),
+	(17,'Bali'),
+	(18,'Nusa Tenggara Barat'),
+	(19,'Nusa Tenggara Timur'),
+	(20,'Kalimantan Barat'),
+	(21,'Kalimantan Tengah'),
+	(22,'Kalimantan Selatan'),
+	(23,'Kalimantan Timur'),
+	(24,'Kalimantan Utara'),
+	(25,'Sulawesi Utara'),
+	(26,'Sulawesi Tengah'),
+	(27,'Sulawesi Selatan'),
+	(28,'Sulawesi Tenggara'),
+	(29,'Gorontalo'),
+	(30,'Sulawesi Barat'),
+	(31,'Maluku'),
+	(32,'Maluku Utara'),
+	(33,'Papua Barat'),
+	(34,'Papua');
 
 /*!40000 ALTER TABLE `province` ENABLE KEYS */;
 UNLOCK TABLES;
